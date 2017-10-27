@@ -58,7 +58,7 @@ public class Tile {
 		return supportsTile;
 	}
 
-	public void generateTile(File cacheDir) {
+	public void generateTile(OutputStream os) {
 			// The Tile cannot be loaded from the cache
 			this.renderThemeFuture.incrementRefCount();
 			RendererJob rendererJob = new RendererJob(this.tile, this.mf, this.renderThemeFuture, this.displayModel,
@@ -67,11 +67,9 @@ public class Tile {
 			if(tileImage != null) {
 				// Put this new Tile into the Cache
 				try {
-					OutputStream cos = MetaGerTileCache.put(cacheDir, this.x, this.y, this.z);
 					tileImage.incrementRefCount();
-					tileImage.compress(cos);
-					cos.flush();
-					cos.close();
+					tileImage.compress(os);
+					os.flush();
 					tileImage.decrementRefCount();
 				} catch (IOException e) {}
 			}

@@ -35,12 +35,12 @@ dependencies {
     
     // https://mvnrepository.com/artifact/com.kitfox.svg/svg-salamander
 	compile group: 'com.kitfox.svg', name: 'svg-salamander', version: '1.0'
-	compile name: 'mapsforge-core-master-20170725.064942-130'
-	compile name: 'mapsforge-map-awt-master-20170725.065022-130'
-	compile name: 'mapsforge-map-master-20170725.064956-130'
-	compile name: 'mapsforge-map-reader-master-20170725.065025-130'
-	compile name: 'mapsforge-themes-master-20170725.065056-130'
-	compile name: 'aredis-1.4'
+	compile name: 'mapsforge-core-master-20171018.075349-172'
+	compile name: 'mapsforge-map-awt-master-20171018.075418-172'
+	compile name: 'mapsforge-map-master-20171018.075357-172'
+	compile name: 'mapsforge-map-reader-master-20171018.075421-172'
+	compile name: 'mapsforge-themes-master-20171018.075451-172'
+	compile name: 'commons-io-2.6'
     //compile 'org.mapsforge:mapsforge-core:0.8.0'
 	//compile 'org.mapsforge:mapsforge-map:0.8.0'
 	//compile 'org.mapsforge:mapsforge-map-reader:0.8.0'
